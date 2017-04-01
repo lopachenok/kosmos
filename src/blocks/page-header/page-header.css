@@ -1,0 +1,23 @@
+.page-header {
+  background: url(bg-cover.png) center;
+  background-size: cover;
+  height: 360px;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background: url(bg-cover@2x.png) center;
+    background-size: cover;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    height: 460px;
+  }
+
+  &__inner {
+    @mixin container;
+
+    padding-top: 20px;
+  }
+}

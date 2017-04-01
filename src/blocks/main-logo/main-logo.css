@@ -1,0 +1,17 @@
+.main-logo {
+  width: 282px;
+  height: 152px;
+  margin: 41px auto 0;
+
+  @media (min-width: $medium-breakpoint) {
+    width: 500px;
+    height: 270px;
+    margin-top: 18px;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,41 @@
+.social {
+
+  &__title {
+    font-family: 'Circe';
+    font-size: 14px;
+    line-height: 1.57;
+    color: #3c174a;
+    text-align: center;
+
+    @media (min-width: $medium-breakpoint) {
+      text-align: right;
+    }
+  }
+
+  &__links {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (min-width: $medium-breakpoint) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+}

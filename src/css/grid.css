@@ -1,0 +1,54 @@
+@define-mixin container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-breakpoint) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $large-breakpoint) {
+    padding-left: 120px;
+    padding-right: 120px;
+    max-width: 1440px;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $medium-breakpoint) {
+
+  .medium-column1 {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0 15px;
+  }
+
+  .medium-column2 {
+    box-sizing: border-box;
+    width: 66.6667%;
+    padding: 0 15px;
+  }
+
+  .medium-column3 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: $large-breakpoint) {
+
+  .medium-column1,
+  .medium-column2,
+  .medium-column3 {
+    padding: 0 20px;
+  }
+}

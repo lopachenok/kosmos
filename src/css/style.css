@@ -2,3 +2,6 @@
 @import 'fonts.css';
 @import 'varibles.css';
 @import 'grid.css';
+@import '../.././src/blocks/page-header/page-header.css';
+@import '../.././src/blocks/social/social.css';
+@import '../.././src/blocks/main-logo/main-logo.css';
