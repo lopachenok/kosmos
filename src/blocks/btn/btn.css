@@ -9,6 +9,8 @@
   color: #fff;
   border: none;
   text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
 
   &--green {
     background-color: #00a765;

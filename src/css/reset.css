@@ -71,7 +71,7 @@ a:hover {
 
   &::after {
     content: '';
-    background: url(1440_mainpage_31.03.17.png);
+    background: url(320_mainpage_31.03.17.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -79,5 +79,15 @@ a:hover {
     height: 100%;
     opacity: 0.5;
     background-size: cover;
+
+    @media (min-width: $medium-breakpoint) {
+      background: url(768_mainpage_31.03.17.png);
+      background-size: cover;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      background: url(1440_mainpage_31.03.17.png);
+      background-size: cover;
+    }
   }
 }*/

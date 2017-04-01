@@ -12,6 +12,8 @@
     @media (min-width: $large-breakpoint) {
       padding: 100px 90px 0;
       overflow: hidden;
+      max-width: 1440px;
+      margin: 0 auto;
     }
   }
 
