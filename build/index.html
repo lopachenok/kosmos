@@ -39,100 +39,104 @@
     </div>
   </header>
 
-  <section class="about">
-    <div class="about__inner">
-      <div class="row">
-        <div class="small-column1">
-          <h2 class="about__title">Откроем <span class="about__hightlight">«Просто космос»</span> вместе!</h2>
-          <button class="btn">Это легко!</button>
-        </div>
-        <div class="small-column1">
-          <div class="video">
-            <video src="" class="video__content"></video>
-            <buttn class="btn btn--green btn--icon">Видео-презентация</buttn>
+  <main class="page-main">
+    <section class="about">
+      <div class="about__inner">
+        <div class="row  about__row">
+          <div class="small-column1  medium-column1  large-column1  about__column">
+            <h2 class="about__title">Откроем <span class="about__hightlight">«Просто космос»</span> вместе!</h2>
+            <button class="btn  about__btn">Это легко!</button>
+          </div>
+          <div class="small-column1  medium-column2  large-column2  about__column-video">
+            <div class="video">
+              <video class="video__content" controls="controls">
+                <source src="video/videoplayback.mp4" type="video/mp4">
+              </video>
+              <buttn class="btn btn--green btn--icon  video__btn">Видео-презентация</buttn>
+            </div>
+          </div>
+          <div class="small-column1  medium-column3  large-column1  about__column-text">
+            <p class="about__text">Дети, прошедшие или проходящие лечение онкологических заболеваний подвергаются множеству испытаний и опасностей, главная из которых – одиночество.</p>
+            <p class="about__text">Проект «Просто космос» - инклюзивное пространство, где каждому рады. Здесь люди, вне зависимости от диагноза или физического состояния, смогут общаться, играть, учиться и мечтать. Мы хотим, чтобы такой цент появился в Санкт-Петербурге и уверены, что вы тоже этого хотите!</p>
+            <p class="about__text">Вместе мы создадим в нашем городе место, где все ПРОСТО!</p>
           </div>
         </div>
-        <div class="small-column1">
-          <p class="about__text">Дети, прошедшие или проходящие лечение онкологических заболеваний подвергаются множеству испытаний и опасностей, главная из которых – одиночество.</p>
-          <p class="about__text">Проект «Просто космос» - инклюзивное пространство, где каждому рады. Здесь люди, вне зависимости от диагноза или физического состояния, смогут общаться, играть, учиться и мечтать. Мы хотим, чтобы такой цент появился в Санкт-Петербурге и уверены, что вы тоже этого хотите!</p>
-          <p class="about__text">Вместе мы создадим в нашем городе место, где все ПРОСТО!</p>
+      </div>
+    </section>
+
+    <section class="money">
+      <div class="money__inner">
+        <div class="money__counter">
+          <b class="money__text">мы собрали уже:<span class="money__summ">1 029 985 </span>осталось:<span class="money__days">65</span>дней</b>
+          <button class="btn">Помочь проекту</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="money">
-    <div class="money__inner">
-      <div class="money__counter">
-        <b class="money__text">мы собрали уже:<span class="money__summ">1 029 985 </span>осталось:<span class="money__days">65</span>дней</b>
-        <button class="btn">Помочь проекту</button>
-      </div>
-    </div>
-    <div class="border-section">
-      <p class="border-section__text">Для открытия первого в Петербурге благотворительного инклюзивного пространства необходимо <span class="border-section__highloght">4 000 000</span> рублей.</p>
-    </div>
-  </section>
-
-  <section class="promises">
-    <div class="promises__inner">
-      <h3 class="promises__title">На эти деньги будет:</h3>
-      <ul class="promises__pictured-list">
-        <li class="promises__pictured-item">арендовано помещение, подходящее по размеру и расположению</li>
-        <li class="promises__pictured-item">закуплена мебель, техника, сделан ремонт</li>
-        <li class="promises__pictured-item">приобретена техника для проведения мероприятий, настольные и видео игры</li>
-        <li class="promises__pictured-item">запущена рекламная кампания, привлекающая внимание людей к проблеме социализации детей, перенесших тяжелые заболевания</li>
-      </ul>
-
-      <h3 class="promises__title">Уже 1 сентября мы откроем «Просто космос», где каждый сможет:</h3>
-      <ul class="promises__iconed-list">
-        <li class="promises__iconed-item">помогать детям с онкозаболеваниями расширять кругозор и познавать мир</li>
-        <li class="promises__iconed-item">посещать лекции, концерты, мастер-классы</li>
-        <li class="promises__iconed-item">роводить время за настольными играми</li>
-        <li class="promises__iconed-item">найти профессиональную поддержку для себя и своей семьи при столкновении с болезнью</li>
-        <li class="promises__iconed-item">пройти программу социальной реабилитации</li>
-        <li class="promises__iconed-item">посещать групповые и индивидуальные сеансы психотерапии</li>
-        <li class="promises__iconed-item">общаться с неравнодушными людьми и теми, кто был или находится в такой же ситуации</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="sponsors">
-    <div class="sponsors__inner">
       <div class="border-section">
-        <h2 class="border-section__text">Станьте спонсором счастливого и открытого будущего Санкт-Петербурга!</h2>
-        <button class="btn">Стать спонсором</button>
+        <p class="border-section__text">Для открытия первого в Петербурге благотворительного инклюзивного пространства необходимо <span class="border-section__highloght">4 000 000</span> рублей.</p>
       </div>
+    </section>
 
-      <h3 class="sponsors__title"></h3>
-      <ul class="sponsors__list">
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item">
-          <button class="btn btn--add"></button>
-        </li>
-      </ul>
-      <h3 class="sponsors__title"></h3>
-      <ul class="sponsors__list">
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
-        <li class="sponsors__item">
-          <button class="btn btn--add"></button>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section class="promises">
+      <div class="promises__inner">
+        <h3 class="promises__title">На эти деньги будет:</h3>
+        <ul class="promises__pictured-list">
+          <li class="promises__pictured-item">арендовано помещение, подходящее по размеру и расположению</li>
+          <li class="promises__pictured-item">закуплена мебель, техника, сделан ремонт</li>
+          <li class="promises__pictured-item">приобретена техника для проведения мероприятий, настольные и видео игры</li>
+          <li class="promises__pictured-item">запущена рекламная кампания, привлекающая внимание людей к проблеме социализации детей, перенесших тяжелые заболевания</li>
+        </ul>
+
+        <h3 class="promises__title">Уже 1 сентября мы откроем «Просто космос», где каждый сможет:</h3>
+        <ul class="promises__iconed-list">
+          <li class="promises__iconed-item">помогать детям с онкозаболеваниями расширять кругозор и познавать мир</li>
+          <li class="promises__iconed-item">посещать лекции, концерты, мастер-классы</li>
+          <li class="promises__iconed-item">роводить время за настольными играми</li>
+          <li class="promises__iconed-item">найти профессиональную поддержку для себя и своей семьи при столкновении с болезнью</li>
+          <li class="promises__iconed-item">пройти программу социальной реабилитации</li>
+          <li class="promises__iconed-item">посещать групповые и индивидуальные сеансы психотерапии</li>
+          <li class="promises__iconed-item">общаться с неравнодушными людьми и теми, кто был или находится в такой же ситуации</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <div class="sponsors__inner">
+        <div class="border-section">
+          <h2 class="border-section__text">Станьте спонсором счастливого и открытого будущего Санкт-Петербурга!</h2>
+          <button class="btn">Стать спонсором</button>
+        </div>
+
+        <h3 class="sponsors__title"></h3>
+        <ul class="sponsors__list">
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item">
+            <button class="btn btn--add"></button>
+          </li>
+        </ul>
+        <h3 class="sponsors__title"></h3>
+        <ul class="sponsors__list">
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item"><img src="" alt="" class="sponsors__img"></li>
+          <li class="sponsors__item">
+            <button class="btn btn--add"></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__inner">

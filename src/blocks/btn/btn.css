@@ -1,0 +1,33 @@
+.btn {
+  padding: 16px 40px 14px;
+  font-family: Circe;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+  text-align: center;
+  background-color: #fbcc21;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+
+  &--green {
+    background-color: #00a765;
+  }
+
+  &--icon {
+    padding-left: 57px;
+    padding-right: 24px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url(ic-play.svg);
+      width: 20px;
+      height: 20px;
+      top: 14px;
+      left: 26px;
+      background-size: contain;
+    }
+  }
+}

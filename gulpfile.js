@@ -99,6 +99,15 @@ gulp.task('fonts', function() {
          .pipe(gulp.dest(dirs.build + '/fonts'))
 });
 
+gulp.task('video', function() {
+  return gulp.src(dirs.source + '/blocks/**/*.mp4')
+  .pipe(debug({title: 'video'}))
+   .pipe(rename(function(path){  // удаляем текущий dirname
+      path.dirname = '';
+      return path;
+    }))
+  .pipe(gulp.dest(dirs.build+'/video'))
+});
 
 //TODO: Newer не работает, т к меняется путь.
 // Копирование и оптимизация изображений из папки img
@@ -189,7 +198,7 @@ gulp.task('build', gulp.series(
   'clean',
   'svgsprite',
   'fonts',
-  gulp.parallel('css', 'img', 'js'),
+  gulp.parallel('css', 'img', 'js', 'video'),
   'html'
 ));
 

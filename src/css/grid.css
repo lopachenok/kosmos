@@ -23,6 +23,10 @@
   flex-wrap: wrap;
 }
 
+.small-column1 {
+  width: 100%;
+}
+
 @media (min-width: $medium-breakpoint) {
 
   .medium-column1 {
@@ -46,9 +50,21 @@
 
 @media (min-width: $large-breakpoint) {
 
-  .medium-column1,
-  .medium-column2,
-  .medium-column3 {
-    padding: 0 20px;
+  .large-column1 {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0 30px;
+  }
+
+  .large-column2 {
+    box-sizing: border-box;
+    width: 66.6667%;
+    padding: 0 30px;
+  }
+
+  .large-column3 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 30px;
   }
 }
