@@ -1,0 +1,198 @@
+.promises {
+  position: relative;
+  z-index: 1;
+
+  &__inner {
+    @mixin container;
+
+    padding-top: 40px;
+
+    @media (min-width: $medium-breakpoint) {
+      padding-top: 52px;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      padding-top: 100px;
+    }
+  }
+
+  &__title {
+    font-family: Circe;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    color: #3c174a;
+    text-transform: uppercase;
+
+    &:not(:first-of-type) {
+      margin-top: 40px;
+
+      @media (min-width: $medium-breakpoint) {
+        margin-top: 52px;
+      }
+
+      @media (min-width: $large-breakpoint) {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  &__pictured-list {
+    @media (min-width: $large-breakpoint) {
+      column-count: 2;
+      padding-top: 52px;
+    }
+  }
+
+  &__pictured-item {
+    margin-top: 20px;
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #3c174a;
+    position: relative;
+    padding-left: 60px;
+    min-height: 43px;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 36px;
+      min-height: 86px;
+      padding-left: 108px;
+      padding-right: 217px;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      margin-top: 64px;
+      padding-right: 0;
+    }
+
+    &:first-of-type {
+      @media (min-width: $medium-breakpoint) {
+        margin-top: 40px;
+      }
+
+      @media (min-width: $large-breakpoint) {
+        min-height: 82px;
+      }
+    }
+
+    &:nth-of-type(odd) {
+      margin-top: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 43px;
+      height: 43px;
+      left: 0;
+      top: 3px;
+
+      @media (min-width: $medium-breakpoint) {
+        height: 86px;
+        width: 86px;
+      }
+    }
+  }
+
+  &__pictured-item:nth-of-type(1)::after {
+    background: url(ic-home.svg);
+    background-size: cover;
+  }
+
+  &__pictured-item:nth-of-type(2)::after {
+    background: url(ic-tech.svg);
+    background-size: cover;
+  }
+
+  &__pictured-item:nth-of-type(3)::after {
+    background: url(ic-games.svg);
+    background-size: cover;
+  }
+
+  &__pictured-item:nth-of-type(4)::after {
+    background: url(ic-adv.svg);
+    background-size: cover;
+  }
+
+  &__iconed-list {
+    @media (min-width: $large-breakpoint) {
+      column-count: 2;
+      padding-top: 38px;
+    }
+  }
+
+  &__iconed-item {
+    margin-top: 20px;
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #3c174a;
+    position: relative;
+    padding-left: 36px;
+
+    @media (min-width: $medium-breakpoint) {
+      padding-right: 234px;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      padding-right: 134px;
+    }
+
+    &:first-of-type,
+    &:nth-of-type(5) {
+      @media (min-width: $large-breakpoint) {
+        margin-top: 0;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 3px;
+    }
+  }
+
+  &__iconed-item:nth-of-type(1)::after {
+    background: url(ic-list-bullet-2.svg);
+    background-size: contain;
+    height: 8px;
+  }
+
+  &__iconed-item:nth-of-type(2)::after {
+    background: url(ic-list-bullet-6.svg);
+    background-size: contain;
+    height: 15px;
+  }
+
+  &__iconed-item:nth-of-type(3)::after {
+    background: url(ic-list-bullet-5.svg);
+    background-size: contain;
+  }
+
+  &__iconed-item:nth-of-type(4)::after {
+    background: url(ic-list-bullet-1.svg);
+    background-size: contain;
+  }
+
+  &__iconed-item:nth-of-type(5)::after {
+    background: url(ic-list-bullet-7.svg);
+    background-size: contain;
+  }
+
+  &__iconed-item:nth-of-type(6)::after {
+    background: url(ic-list-bullet-3.svg);
+    background-size: contain;
+    height: 8px;
+  }
+
+  &__iconed-item:nth-of-type(7)::after {
+    background: url(ic-list-bullet-4.svg);
+    background-size: contain;
+  }
+}

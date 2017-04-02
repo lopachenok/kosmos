@@ -1,0 +1,56 @@
+.border-section {
+  width: calc(100% - 20px);
+  background-color: rgba(254, 254, 254, 0.6);
+  border: solid 1px #00a3db;
+  padding: 40px 30px 60px;
+  box-sizing: border-box;
+
+  @media (min-width: $medium-breakpoint) {
+    width: calc(100% - 34px);
+    padding: 50px 250px 70px 40px;
+  }
+
+  @media (min-width: $large-breakpoint) {
+    width: calc(100% - 160px);
+    max-width: 1520px;
+    padding-right: 465px;
+  }
+
+  &__text {
+    font-family: Circe;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #71498c;
+
+    @media (min-width: $medium-breakpoint) {
+      font-size: 36px;
+    }
+  }
+
+  &__highlight {
+    font-weight: 800;
+  }
+
+  &--smile-icon {
+    position: relative;
+  }
+
+  &--smile-icon::after {
+    @media (min-width: $medium-breakpoint) {
+      content: '';
+      position: absolute;
+      right: 54px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(face-1.svg);
+      width: 140px;
+      height: 129px;
+      background-size: cover;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      right: 150px;
+    }
+  }
+}
