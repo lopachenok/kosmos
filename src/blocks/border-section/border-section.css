@@ -4,6 +4,7 @@
   border: solid 1px #00a3db;
   padding: 40px 30px 60px;
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: $medium-breakpoint) {
     width: calc(100% - 34px);
@@ -32,10 +33,6 @@
     font-weight: 800;
   }
 
-  &--smile-icon {
-    position: relative;
-  }
-
   &--smile-icon::after {
     @media (min-width: $medium-breakpoint) {
       content: '';
@@ -51,6 +48,37 @@
 
     @media (min-width: $large-breakpoint) {
       right: 150px;
+    }
+  }
+
+  &--happy-icon::after {
+    @media (min-width: $medium-breakpoint) {
+      content: '';
+      position: absolute;
+      right: 54px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(face-3.svg);
+      width: 140px;
+      height: 113px;
+      background-size: cover;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      right: 150px;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    padding: 18px 22px 16px;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 36px;
+    }
+
+    @media (min-width: $large-breakpoint) {
+      margin-top: 50px;
     }
   }
 }
