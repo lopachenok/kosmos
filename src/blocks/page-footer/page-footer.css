@@ -1,0 +1,38 @@
+.page-footer {
+  background: url(pattern.svg) repeat;
+  background-size: 250%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    background-size: 200%;
+  }
+
+  @media (min-width: $large-breakpoint) {
+    background-size: 100%;
+  }
+
+  &__inner {
+    width: calc(100% - 20px);
+    background-color: rgba(254, 254, 254, 0.6);
+    border: solid 1px #00a3db;
+    padding: 40px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__references {
+    margin-top: 40px;
+  }
+}

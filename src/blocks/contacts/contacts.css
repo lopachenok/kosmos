@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: Circe;
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    color: #3c174a;
+  }
+
+  &__name {
+    font-family: Circe;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c174a;
+    margin-top: 20px;
+  }
+
+  &__email {
+    font-family: Circe;
+    font-size: 14px;
+    color: #286aa6;
+    margin-top: 10px;
+  }
+
+  &__phone {
+    font-family: Circe;
+    font-size: 14px;
+    color: #3c174a;
+    margin-top: 10px;
+  }
+}
