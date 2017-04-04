@@ -69,6 +69,10 @@
     justify-content: center;
     align-items: center;
 
+    &:last-of-type {
+      position: relative;
+    }
+
     @media (min-width: $medium-breakpoint) {
       margin: 24px 10px 0;
     }
