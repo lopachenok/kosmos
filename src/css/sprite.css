@@ -5,116 +5,128 @@
 }
 
 .border-section--face-3 {
-	background: url("sprite.svg") 0 5.2356020942408374% no-repeat;
+	background: url("sprite.svg") 0 3.848003848003848% no-repeat;
 	width: 104px;
 	height: 84px;
 }
 
 .btn--ic-add-white-48-px {
-	background: url("sprite.svg") 0 10.327455919395465% no-repeat;
+	background: url("sprite.svg") 0 7.6671341748480595% no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .btn--ic-play {
-	background: url("sprite.svg") 0 11.838790931989925% no-repeat;
+	background: url("sprite.svg") 0 8.789153810191678% no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .main-logo--logoletters {
-	background: url("sprite.svg") 0 16.207951070336392% no-repeat;
+	background: url("sprite.svg") 0 11.403980634749866% no-repeat;
 	width: 564px;
 	height: 304px;
 }
 
 .page-main--pattern {
-	background: url("sprite.svg") 0 50.24342745861733% no-repeat;
+	background: url("sprite.svg") 0 32.69961977186312% no-repeat;
 	width: 1597px;
 	height: 585px;
 }
 
 .promises--ic-adv {
-	background: url("sprite.svg") 0 72.14941022280472% no-repeat;
+	background: url("sprite.svg") 0 53.0091478093404% no-repeat;
 	width: 86px;
 	height: 86px;
 }
 
 .promises--ic-games {
-	background: url("sprite.svg") 0 77.78505897771953% no-repeat;
+	background: url("sprite.svg") 0 57.14973519499278% no-repeat;
 	width: 86px;
 	height: 86px;
 }
 
 .promises--ic-home {
-	background: url("sprite.svg") 0 83.42070773263434% no-repeat;
+	background: url("sprite.svg") 0 61.29032258064516% no-repeat;
 	width: 86px;
 	height: 86px;
 }
 
 .promises--ic-list-bullet-1 {
-	background: url("sprite.svg") 0 85.15037593984962% no-repeat;
+	background: url("sprite.svg") 0 63.29762459245459% no-repeat;
 	width: 16px;
 	height: 16px;
 }
 
 .promises--ic-list-bullet-2 {
-	background: url("sprite.svg") 0 85.72319201995012% no-repeat;
+	background: url("sprite.svg") 0 63.80510440835267% no-repeat;
 	width: 16px;
 	height: 8px;
 }
 
 .promises--ic-list-bullet-3 {
-	background: url("sprite.svg") 0 86.2219451371571% no-repeat;
+	background: url("sprite.svg") 0 64.17633410672853% no-repeat;
 	width: 16px;
 	height: 8px;
 }
 
 .promises--ic-list-bullet-4 {
-	background: url("sprite.svg") 0 87.15538847117794% no-repeat;
+	background: url("sprite.svg") 0 64.7880763856544% no-repeat;
 	width: 16px;
 	height: 16px;
 }
 
 .promises--ic-list-bullet-5 {
-	background: url("sprite.svg") 0 88.15789473684211% no-repeat;
+	background: url("sprite.svg") 0 65.53330228225431% no-repeat;
 	width: 16px;
 	height: 16px;
 }
 
 .promises--ic-list-bullet-6 {
-	background: url("sprite.svg") 0 89.10457107075767% no-repeat;
+	background: url("sprite.svg") 0 66.24767225325884% no-repeat;
 	width: 16px;
 	height: 15px;
 }
 
 .promises--ic-list-bullet-7 {
-	background: url("sprite.svg") 0 90.10025062656642% no-repeat;
+	background: url("sprite.svg") 0 66.97717745691662% no-repeat;
 	width: 16px;
 	height: 16px;
 }
 
 .promises--ic-tech {
-	background: url("sprite.svg") 0 95.28178243774575% no-repeat;
+	background: url("sprite.svg") 0 70.00481463649494% no-repeat;
 	width: 86px;
 	height: 86px;
 }
 
-.social--ic-facebook {
-	background: url("sprite.svg") 0 96.97732997481108% no-repeat;
-	width: 24px;
-	height: 24px;
+.references--Logo_BF {
+	background: url("sprite.svg") 0 92.7710843373494% no-repeat;
+	width: 547px;
+	height: 503px;
 }
 
-.social--ic-twitter {
-	background: url("sprite.svg") 0 98.48866498740554% no-repeat;
-	width: 24px;
-	height: 24px;
+.social--ic-Facebook {
+	background: url("sprite.svg") 0 95.78059071729957% no-repeat;
+	width: 30px;
+	height: 30px;
 }
 
-.social--ic-v-k {
+.social--ic-Instagram {
+	background: url("sprite.svg") 0 97.18706047819971% no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.social--ic-Twitter {
+	background: url("sprite.svg") 0 98.59353023909986% no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.social--ic-VK {
 	background: url("sprite.svg") 0 100% no-repeat;
-	width: 24px;
-	height: 24px;
+	width: 30px;
+	height: 30px;
 }
 
