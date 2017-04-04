@@ -1,7 +1,11 @@
-.references {
+.share {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $medium-breakpoint) {
+    align-items: flex-end;
+  }
 
   &__title {
     font-family: Circe;
@@ -9,22 +13,15 @@
     line-height: 1.29;
     text-transform: uppercase;
     color: #3c174a;
-    width: 200px;
-    text-align: center;
-
-    @media (min-width: $medium-breakpoint) {
-      width: auto;
-    }
   }
 
-  &__link {
-    width: 68px;
-    height: 65px;
+  &__links {
+    display: flex;
     margin-top: 20px;
   }
 
-  &__logo {
-    width: 100%;
-    height: 100%;
+  &__link {
+    display: block;
+    margin: 0 5px;
   }
 }
