@@ -6,6 +6,10 @@
   position: absolute;
   background-color: rgba(254, 254, 254, 0.9);
   bottom: 70px;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease, visibility .3s ease, z-index .5s ease;
 
   &::after {
     content: '';
@@ -67,5 +71,11 @@
     text-decoration: underline;
     color: #286aa6;
     margin-top: 8px;
+  }
+
+  &--open {
+    visibility: visible;
+    z-index: 2;
+    opacity: 1;
   }
 }

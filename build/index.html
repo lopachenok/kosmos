@@ -48,8 +48,8 @@
             <button class="btn  about__btn">Это легко!</button>
           </div>
           <div class="small-column1  medium-column2  large-column2  about__column-video">
-            <div class="video">
-              <video class="video__content" controls="controls">
+            <div class="video" id="video">
+              <video class="video__content" controls="controls" poster="img/preview.png" id="video-player">
                 <source src="video/videoplayback.mp4" type="video/mp4">
               </video>
               <buttn class="btn btn--green btn--icon  video__btn">Видео-презентация</buttn>
@@ -134,14 +134,14 @@
           <li class="sponsors__item"><img src="img/3.jpg" alt="" class="sponsors__img" data-object-fit="cover"></li>
           <li class="sponsors__item"><img src="img/4.jpg" alt="" class="sponsors__img" data-object-fit="cover"></li>
           <li class="sponsors__item">
-            <div class="popover">
+            <div class="popover" id="popover">
               <h3 class="popover__title">Вы медийная личность? </h3>
               <p class="popover__text">Хотите поучаствовать в благотворительном челлендже и поддержать проект «Просто космос»?</p>
               <h4 class="popover__contacts">Звоните или пишите:</h4>
               <a href="" class="popover__phone">+7(981) 972-64-08</a>
               <a href="" class="popover__email">pr@нитьдобра.рф</a>
             </div>
-            <button class="btn btn--add"></button>
+            <button class="btn btn--add" id="popover-open"></button>
           </li>
         </ul>
       </div>
@@ -170,6 +170,7 @@
           </div>
     </div>
   </footer>
-
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

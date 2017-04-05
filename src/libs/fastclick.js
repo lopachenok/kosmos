@@ -839,4 +839,3 @@
 		window.FastClick = FastClick;
 	}
 }());
-//# sourceMappingURL=vendor.js.map
