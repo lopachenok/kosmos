@@ -11,9 +11,24 @@
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
+  transition: all .2s ease;
 
   &--green {
     background-color: #00a765;
+
+    &:hover {
+      background-color: color(#00a765 blackness(10%));
+    }
+  }
+
+  &--red {
+    background-color: #e0542f;
+    padding-left: 29px;
+    padding-right: 29px;
+
+    &:hover {
+      background-color: color(#e0542f blackness(10%));
+    }
   }
 
   &--icon {
@@ -31,6 +46,10 @@
       left: 26px;
       background-size: contain;
     }
+  }
+
+  &:hover {
+    background-color: color(#fbcc21 blackness(10%));
   }
 
   &--add {

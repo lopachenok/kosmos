@@ -1,0 +1,53 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease, visibility .4s ease, z-index 0s ease .4s;
+
+  &__inner {
+    width: 300px;
+    background-color: rgba(254, 254, 254, 0.6);
+    border: solid 1px #00a3db;
+    padding: 50px 26px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 40px auto;
+  }
+
+  &__close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(ic-close.svg);
+    right: 20px;
+    top: 20px;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: Circe;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.11;
+    color: #71498c;
+  }
+
+  &__hightlight {
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &--open {
+    visibility: visible;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity .4s ease, visibility .4s ease, z-index 0s ease;
+  }
+}

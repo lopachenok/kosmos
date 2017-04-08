@@ -1,0 +1,82 @@
+.popup-form {
+  padding-top: 20px;
+
+  &__fieldset {
+    position: relative;
+    margin-bottom: 36px;
+
+    &--name {
+      width: 26%;
+    }
+
+    &--surname {
+      width: 50%;
+    }
+
+    &--error {
+
+      .popup-form__input {
+        border-color: #e0542f;
+        color: #e0542f;
+      }
+
+      .popup-form__label {
+        color: #e0542f;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 100%;
+    border-bottom: 1px solid rgba(113, 73, 140, 0.3);
+    height: 30px;
+    position: relative;
+    z-index: 4;
+    background: transparent;
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.22;
+    color: rgba(60, 23, 74, 1);
+
+    &:focus + .popup-form__label,
+    &:valid + .popup-form__label {
+      font-size: 14px;
+      transform: translate3d(0, -25px, 0);
+    }
+  }
+
+  &__label {
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.22;
+    color: rgba(60, 23, 74, .5);
+    position: absolute;
+    bottom: 5px;
+    transition: all .3s ease;
+  }
+
+  &__title {
+    font-family: Circe;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    color: #3c174a;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+
+  &__error-text {
+    font-family: Circe;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #df542f;
+    margin-top: 10px;
+    width: 166px;
+  }
+}

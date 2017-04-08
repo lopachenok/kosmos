@@ -18,3 +18,6 @@
 @import '../.././src/blocks/references/references.css';
 @import '../.././src/blocks/share/share.css';
 @import '../.././src/blocks/popover/popover.css';
+@import '../.././src/blocks/popup-overlay/popup-overlay.css';
+@import '../.././src/blocks/popup/popup.css';
+@import '../.././src/blocks/popup-form/popup-form.css';

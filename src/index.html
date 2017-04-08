@@ -36,7 +36,7 @@
         <div class="row  about__row">
           <div class="small-column1  medium-column1  large-column1  about__column">
             <h2 class="about__title">Откроем <span class="about__hightlight">«Просто космос»</span> вместе!</h2>
-            <button class="btn  about__btn">Это легко!</button>
+            <button class="btn  about__btn" data-popup="payment">Это легко!</button>
           </div>
           <div class="small-column1  medium-column2  large-column2  about__column-video">
             <div class="video" id="video">
@@ -63,7 +63,7 @@
             <span class="money__currency">&#8381; </span><br>
             осталось: <span class="money__days">65 </span>дней
           </b>
-          <button class="btn  money__btn">Помочь проекту</button>
+          <button class="btn  money__btn" data-popup="payments">Помочь проекту</button>
         </div>
       </div>
       <div class="border-section  border-section--smile-icon  money__border-section">
@@ -97,7 +97,7 @@
     <section class="sponsors">
       <div class="border-section  border-section--happy-icon  sponsors__border-section">
         <h2 class="border-section__text">Станьте спонсором счастливого и открытого будущего Санкт-Петербурга!</h2>
-        <button class="btn  border-section__btn">Стать спонсором</button>
+        <button class="btn  border-section__btn" data-popup="payment">Стать спонсором</button>
       </div>
       <div class="sponsors__inner">
         <h3 class="sponsors__title">Партнеры проекта:</h3>
@@ -109,7 +109,7 @@
           <li class="sponsors__item"><img src="img/5.jpg" alt="" class="sponsors__img" data-object-fit="cover"></li>
           <li class="sponsors__item"><img src="img/6.jpg" alt="" class="sponsors__img" data-object-fit="cover"></li>
           <li class="sponsors__item">
-            <button class="btn btn--add"></button>
+            <button class="btn btn--add" data-popup="partner"></button>
           </li>
         </ul>
         <h3 class="sponsors__title">Проект поддерживают:</h3>
@@ -161,6 +161,111 @@
           </div>
     </div>
   </footer>
+
+  <div class="popup-overlay" id="popup-overlay"></div>
+
+  <div class="popup" id="partner">
+    <div class="popup__inner">
+      <span class="popup__close"></span>
+      <h2 class="popup__title">Стать партнером проекта <span class="popup__hightlight">«Просто космос»</span></h2>
+      <form action="" class="popup-form">
+        <fieldset class="popup-form__fieldset">
+          <input type="text" class="popup-form__input" required>
+          <label class="popup-form__label">Название компании</label>
+        </fieldset>
+        <h3 class="popup-form__title">Контактное лицо</h3>
+        <div class="popup-form__container">
+          <div class="popup-form__fieldset  popup-form__fieldset--name">
+            <input type="text" class="popup-form__input" required>
+            <label class="popup-form__label">Имя</label>
+          </div>
+          <div class="popup-form__fieldset  popup-form__fieldset--surname">
+            <input type="text" class="popup-form__input" required>
+            <label class="popup-form__label">Фамилия</label>
+          </div>
+        </div>
+        <fieldset class="popup-form__fieldset">
+          <input type="text" class="popup-form__input" required>
+          <label class="popup-form__label">Эл. почта</label>
+        </fieldset>
+        <fieldset class="popup-form__fieldset">
+          <input type="text" class="popup-form__input" required>
+          <label class="popup-form__label">Номер телефона</label>
+        </fieldset>
+        <button class="btn btn--red">Отправить</button>
+        <p class="popup-form__error-text">Обнаружены ошибки (1) при заполнении полей</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup__inner">
+      <h2 class="popup__title">Я помог открыться <span class="popup__hightlight">«Просто космос»</span></h2>
+      <div class="popup__share">
+        <p class="popup__text">Расскажите своим друзьям о проекте:</p>
+        <div class="popup__links">
+          <a href="" class="popup__link">
+            <img src="" alt="" class="popup__logo">
+          </a>
+          <a href="" class="popup__link">
+            <img src="" alt="" class="popup__logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-payments" id="payment">
+    <div class="popup-payments__inner">
+      <div class="card">
+        <form action="" class="card__form">
+          <fieldset class="card__field">
+            <input type="text" class="card__input">
+          </fieldset>
+          <fieldset class="card__field">
+            <input type="text" class="card__input">
+            <input type="text" class="card__input">
+          </fieldset>
+          <fieldset class="card__field">
+            <input type="text" class="card__input">
+          </fieldset>
+          <div class="card__logo-block">
+            <img src="" alt="" class="card__logo">
+            <img src="" alt="" class="card__logo">
+          </div>
+        </form>
+        <p class="card__text">*Информация передается по защищенному соединению</p>
+      </div>
+
+      <div class="popup-payments__border">
+        <h2 class="popup-payments__title">Поддержать проект</h2>
+        <form action="" class="popup-form">
+          <fieldset class="form__fieldset">
+            <input type="text" class="form__input">
+            <label class="form__label">Название компании</label>
+          </fieldset>
+          <h3 class="form__title">Контактное лицо</h3>
+          <fieldset class="form__fieldset">
+            <div class="form__item">
+              <input type="text" class="form__input">
+              <label class="form__label">Ваше имя</label>
+            </div>
+            <div class="form__item">
+              <input type="text" class="form__input">
+              <label class="form__label">Сумма</label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <input type="text" class="form__input">
+            <label class="form__label">Эл. почта</label>
+          </fieldset>
+          <p class="form__text">Мы вышлем Вам квитанцию. Никакого спама, обещаем!</p>
+          <button class="btn btn-red">Отправить</button>
+          <p class="form error__text">Обнаружены ошибки (1) при заполнении полей</p>
+        </form>
+      </div>
+    </div>
+  </div>
 @@include('include/bottom.html')
 </body>
 </html>
