@@ -18,6 +18,12 @@
     box-sizing: border-box;
     position: relative;
     margin: 40px auto;
+
+    @media (min-width: $medium-breakpoint) {
+      padding: 50px 40px;
+      width: 448px;
+      margin-top: 60px;
+    }
   }
 
   &__close {
@@ -42,6 +48,10 @@
   &__hightlight {
     font-weight: 800;
     text-transform: uppercase;
+
+    @media (min-width: $medium-breakpoint) {
+      display: block;
+    }
   }
 
   &--open {
@@ -49,5 +59,32 @@
     z-index: 4;
     opacity: 1;
     transition: opacity .4s ease, visibility .4s ease, z-index 0s ease;
+  }
+
+  &__text {
+    width: 140.5px;
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-top: 30px;
+    color: #3c174a;
+
+    @media (min-width: $medium-breakpoint) {
+      width: 222px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 5px;
+  }
+
+  &__logo {
+    opacity: .5;
   }
 }

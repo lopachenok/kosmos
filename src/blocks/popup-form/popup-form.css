@@ -1,16 +1,28 @@
 .popup-form {
   padding-top: 20px;
 
+  @media (min-width: $medium-breakpoint) {
+    margin-top: 36px;
+  }
+
   &__fieldset {
     position: relative;
     margin-bottom: 36px;
 
     &--name {
-      width: 26%;
+      width: 80px;
+
+      @media (min-width: $medium-breakpoint) {
+        width: 119px;
+      }
     }
 
     &--surname {
-      width: 50%;
+      width: 151px;
+
+      @media (min-width: $medium-breakpoint) {
+        width: 226px;
+      }
     }
 
     &--error {
@@ -23,6 +35,10 @@
       .popup-form__label {
         color: #e0542f;
       }
+    }
+
+    &--no-margin {
+      margin-bottom: 0;
     }
   }
 
@@ -42,6 +58,12 @@
     font-size: 18px;
     line-height: 1.22;
     color: rgba(60, 23, 74, 1);
+    transition: border-color .2s ease;
+
+    &:focus,
+    &:valid {
+      border-color: #00a3db;
+    }
 
     &:focus + .popup-form__label,
     &:valid + .popup-form__label {
@@ -69,6 +91,10 @@
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 28px;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 54px;
+    }
   }
 
   &__error-text {
@@ -78,5 +104,24 @@
     color: #df542f;
     margin-top: 10px;
     width: 166px;
+
+    @media (min-width: $medium-breakpoint) {
+      float: right;
+      margin-right: 20px;
+    }
+  }
+
+  &__text {
+    font-family: Circe;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(60, 23, 74, .5);
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  &--payments {
+    padding-top: 48px;
+    padding-right: 44px;
   }
 }

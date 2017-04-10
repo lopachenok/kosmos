@@ -21,3 +21,5 @@
 @import '../.././src/blocks/popup-overlay/popup-overlay.css';
 @import '../.././src/blocks/popup/popup.css';
 @import '../.././src/blocks/popup-form/popup-form.css';
+@import '../.././src/blocks/popup-payments/popup-payments.css';
+@import '../.././src/blocks/card/card.css';

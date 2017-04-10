@@ -63,7 +63,7 @@
             <span class="money__currency">&#8381; </span><br>
             осталось: <span class="money__days">65 </span>дней
           </b>
-          <button class="btn  money__btn" data-popup="payments">Помочь проекту</button>
+          <button class="btn  money__btn" data-popup="payment">Помочь проекту</button>
         </div>
       </div>
       <div class="border-section  border-section--smile-icon  money__border-section">
@@ -192,7 +192,7 @@
           <input type="text" class="popup-form__input" required>
           <label class="popup-form__label">Номер телефона</label>
         </fieldset>
-        <button class="btn btn--red">Отправить</button>
+        <button class="btn btn--red" disabled>Отправить</button>
         <p class="popup-form__error-text">Обнаружены ошибки (1) при заполнении полей</p>
       </form>
     </div>
@@ -200,15 +200,16 @@
 
   <div class="popup">
     <div class="popup__inner">
-      <h2 class="popup__title">Я помог открыться <span class="popup__hightlight">«Просто космос»</span></h2>
+      <span class="popup__close"></span>
+      <h2 class="popup__title">Я помог открыться <span class="popup__hightlight">«Просто космосу»</span></h2>
       <div class="popup__share">
         <p class="popup__text">Расскажите своим друзьям о проекте:</p>
         <div class="popup__links">
           <a href="" class="popup__link">
-            <img src="" alt="" class="popup__logo">
+            <img src="img/ic-VK.svg" alt="" class="popup__logo">
           </a>
           <a href="" class="popup__link">
-            <img src="" alt="" class="popup__logo">
+            <img src="img/ic-Facebook.svg" alt="" class="popup__logo">
           </a>
         </div>
       </div>
@@ -218,50 +219,48 @@
   <div class="popup-payments" id="payment">
     <div class="popup-payments__inner">
       <div class="card">
+        <div class="card__copy"></div>
         <form action="" class="card__form">
           <fieldset class="card__field">
-            <input type="text" class="card__input">
+            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
+            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
+            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
+            <input type="text" class="card__input" placeholder="0000" required>
           </fieldset>
           <fieldset class="card__field">
-            <input type="text" class="card__input">
-            <input type="text" class="card__input">
-          </fieldset>
-          <fieldset class="card__field">
-            <input type="text" class="card__input">
+            <input type="text" class="card__input" placeholder="mm/yy" required>
+            <input type="text" class="card__input" placeholder="CVV" required>
           </fieldset>
           <div class="card__logo-block">
-            <img src="" alt="" class="card__logo">
-            <img src="" alt="" class="card__logo">
+            <img src="img/ic-mastercard-new.svg" alt="" class="card__logo">
+            <img src="img/ic-visa.svg" alt="" class="card__logo">
           </div>
+          <fieldset class="card__field">
+            <input type="text" class="card__input  card__input--cardholder" placeholder="Cardholder name" required>
+          </fieldset>
+          <p class="card__text">*Информация передается по защищенному соединению</p>
         </form>
-        <p class="card__text">*Информация передается по защищенному соединению</p>
       </div>
 
       <div class="popup-payments__border">
+        <span class="popup-payments__close"></span>
         <h2 class="popup-payments__title">Поддержать проект</h2>
-        <form action="" class="popup-form">
-          <fieldset class="form__fieldset">
-            <input type="text" class="form__input">
-            <label class="form__label">Название компании</label>
+        <form action="" class="popup-form  popup-form--payments">
+          <fieldset class="popup-form__fieldset">
+              <input type="text" class="popup-form__input" required>
+              <label class="popup-form__label">Ваше имя</label>
           </fieldset>
-          <h3 class="form__title">Контактное лицо</h3>
-          <fieldset class="form__fieldset">
-            <div class="form__item">
-              <input type="text" class="form__input">
-              <label class="form__label">Ваше имя</label>
-            </div>
-            <div class="form__item">
-              <input type="text" class="form__input">
-              <label class="form__label">Сумма</label>
-            </div>
+          <fieldset class="popup-form__fieldset">
+              <input type="text" class="popup-form__input" required>
+              <label class="popup-form__label">Сумма</label>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <input type="text" class="form__input">
-            <label class="form__label">Эл. почта</label>
+          <fieldset class="popup-form__fieldset  popup-form__fieldset--no-margin">
+            <input type="text" class="popup-form__input" required>
+            <label class="popup-form__label">Эл. почта</label>
           </fieldset>
-          <p class="form__text">Мы вышлем Вам квитанцию. Никакого спама, обещаем!</p>
-          <button class="btn btn-red">Отправить</button>
-          <p class="form error__text">Обнаружены ошибки (1) при заполнении полей</p>
+          <p class="popup-form__text">Мы вышлем Вам квитанцию. Никакого спама, обещаем!</p>
+          <button class="btn btn--red" disabled>Отправить</button>
+          <p class="popup-form__error-text">Обнаружены ошибки (1) при заполнении полей</p>
         </form>
       </div>
     </div>
