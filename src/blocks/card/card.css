@@ -1,0 +1,195 @@
+.card {
+  width: 461px;
+  height: 290px;
+  border-radius: 20px;
+  background-image: -webkit-linear-gradient(#b4ed50, #429321);
+  background-image: -o-linear-gradient(#b4ed50, #429321);
+  background-image: linear-gradient(#b4ed50, #429321);
+  box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  @media (min-width: $medium-breakpoint) {
+    right: 26px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 167, 101, .6);
+    border-radius: 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 22px;
+    height: 57px;
+    background-color: #262626;
+    z-index: 1;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
+    padding: 103px 30px 18px;
+    width: 360px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media (min-width: $medium-breakpoint) {
+      padding-left: 52px;
+      padding-right: 52px;
+      width: 100%;
+    }
+  }
+
+  &__field {
+
+    &:nth-of-type(2) {
+      margin-top: 21px;
+
+      @media (min-width: $medium-breakpoint) {
+        margin-top: 16px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 30px;
+
+      @media (min-width: $medium-breakpoint) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__input {
+    width: 53px;
+    background: transparent;
+    border-bottom: solid 2px rgba(255, 255, 255, .5);
+    margin-right: 25px;
+    font-family: Circe;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #fff;
+    transition: border-color .2s ease;
+
+    @media (min-width: $medium-breakpoint) {
+      width: 67px;
+      line-height: 2;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:focus {
+      border-color: #fff;
+    }
+
+    &:valid {
+      border-color: #fff;
+    }
+
+    &--cardholder {
+      width: 193px;
+      text-align: left;
+      text-transform: uppercase;
+      font-family: Courier;
+      line-height: 1.5;
+
+      @media (min-width: $medium-breakpoint) {
+        font-size: 18px;
+        width: 264px;
+      }
+    }
+
+    &--card-number {
+      @media (min-width: $medium-breakpoint) {
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: normal;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    &::-moz-placeholder {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    &:-moz-placeholder {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(255, 255, 255, .5);
+    }
+  }
+
+  &__logo-block {
+    float: right;
+    margin-top: -20px;
+  }
+
+  &__logo {
+    width: 58px;
+    display: block;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+    margin-top: 15px;
+  }
+}
+
+.card-copy {
+  @media (min-width: $medium-breakpoint) {
+    width: 461px;
+    height: 290px;
+    position: relative;
+    margin-top: -273px;
+    background-image: -webkit-linear-gradient(#b4ed50, #429321);
+    background-image: -o-linear-gradient(#b4ed50, #429321);
+    background-image: linear-gradient(#b4ed50, #429321);
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  &::after {
+    @media (min-width: $medium-breakpoint) {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 167, 101, .6);
+      border-radius: 20px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $medium-breakpoint) {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 22px;
+      height: 57px;
+      background-color: #262626;
+      z-index: 1;
+    }
+  }
+}

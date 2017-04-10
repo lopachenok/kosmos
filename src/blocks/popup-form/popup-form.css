@@ -118,10 +118,20 @@
     color: rgba(60, 23, 74, .5);
     margin-bottom: 30px;
     margin-top: 5px;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 12px;
+    }
   }
 
   &--payments {
     padding-top: 48px;
     padding-right: 44px;
+
+    @media (min-width: $medium-breakpoint) {
+      margin-top: 30px;
+      padding-top: 0;
+      padding-right: 91px;
+    }
   }
 }

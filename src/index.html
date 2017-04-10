@@ -218,28 +218,30 @@
 
   <div class="popup-payments" id="payment">
     <div class="popup-payments__inner">
-      <div class="card">
-        <div class="card__copy"></div>
-        <form action="" class="card__form">
-          <fieldset class="card__field">
-            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
-            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
-            <input type="text" maxlength="4" class="card__input" placeholder="0000" required>
-            <input type="text" class="card__input" placeholder="0000" required>
-          </fieldset>
-          <fieldset class="card__field">
-            <input type="text" class="card__input" placeholder="mm/yy" required>
-            <input type="text" class="card__input" placeholder="CVV" required>
-          </fieldset>
-          <div class="card__logo-block">
-            <img src="img/ic-mastercard-new.svg" alt="" class="card__logo">
-            <img src="img/ic-visa.svg" alt="" class="card__logo">
-          </div>
-          <fieldset class="card__field">
-            <input type="text" class="card__input  card__input--cardholder" placeholder="Cardholder name" required>
-          </fieldset>
-          <p class="card__text">*Информация передается по защищенному соединению</p>
-        </form>
+      <div class="card-blok">
+        <div class="card">
+          <form action="" class="card__form">
+            <fieldset class="card__field">
+              <input type="text" maxlength="4" class="card__input  card__input--card-number" placeholder="0000" required>
+              <input type="text" maxlength="4" class="card__input  card__input--card-number" placeholder="0000" required>
+              <input type="text" maxlength="4" class="card__input  card__input--card-number" placeholder="0000" required>
+              <input type="text" class="card__input  card__input--card-number" placeholder="0000" required>
+            </fieldset>
+            <fieldset class="card__field">
+              <input type="text" class="card__input" placeholder="mm/yy" required>
+              <input type="text" class="card__input" placeholder="CVV" required>
+            </fieldset>
+            <div class="card__logo-block">
+              <img src="img/ic-mastercard-new.svg" alt="" class="card__logo">
+              <img src="img/ic-visa.svg" alt="" class="card__logo">
+            </div>
+            <fieldset class="card__field">
+              <input type="text" class="card__input  card__input--cardholder" placeholder="Cardholder name" required>
+            </fieldset>
+            <p class="card__text">*Информация передается по защищенному соединению</p>
+          </form>
+        </div>
+        <div class="card-copy"></div>
       </div>
 
       <div class="popup-payments__border">
