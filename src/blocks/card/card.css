@@ -43,8 +43,8 @@
     box-sizing: border-box;
 
     @media (min-width: $medium-breakpoint) {
-      padding-left: 52px;
-      padding-right: 52px;
+      padding-left: 45px;
+      padding-right: 45px;
       width: 100%;
     }
   }
@@ -115,6 +115,14 @@
         font-size: 24px;
         letter-spacing: 2px;
         line-height: normal;
+      }
+
+      &:last-of-type {
+        width: 55px;
+
+        @media (min-width: $medium-breakpoint) {
+          width: 84px;
+        }
       }
     }
 

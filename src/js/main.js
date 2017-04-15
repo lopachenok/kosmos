@@ -4,3 +4,4 @@
 //= ../blocks/sponsors/sponsors.js
 //= ../blocks/popup/popup.js
 //= ../blocks/popup-form/popup-form.js
+//= ../blocks/card/card.js

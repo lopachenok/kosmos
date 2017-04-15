@@ -228,15 +228,15 @@
               <input type="text" class="card__input  card__input--card-number" placeholder="0000" required>
             </fieldset>
             <fieldset class="card__field">
-              <input type="text" class="card__input" placeholder="mm/yy" required>
-              <input type="text" class="card__input" placeholder="CVV" required>
+              <input type="text" class="card__input" placeholder="mm/yy" required id="card-date">
+              <input type="text" class="card__input" placeholder="CVV" maxlength="3" required id="cvv">
             </fieldset>
             <div class="card__logo-block">
               <img src="img/ic-mastercard-new.svg" alt="" class="card__logo">
               <img src="img/ic-visa.svg" alt="" class="card__logo">
             </div>
             <fieldset class="card__field">
-              <input type="text" class="card__input  card__input--cardholder" placeholder="Cardholder name" required>
+              <input type="text" class="card__input  card__input--cardholder" placeholder="Cardholder name" id="cardholder" required>
             </fieldset>
             <p class="card__text">*Информация передается по защищенному соединению</p>
           </form>
