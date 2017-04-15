@@ -13,6 +13,10 @@
   cursor: pointer;
   transition: all .2s ease;
 
+  &:hover {
+    background-color: color(#fbcc21 blackness(10%));
+  }
+
   &--green {
     background-color: #00a765;
 
@@ -21,13 +25,13 @@
     }
   }
 
-  &--red {
-    background-color: #e0542f;
+  &--blue {
+    background: #00a3db;
     padding-left: 29px;
     padding-right: 29px;
 
     &:hover {
-      background-color: color(#e0542f blackness(10%));
+      background-color: color(#00a3db blackness(10%));
 
       &:disabled {
         background-color: #d9d9d9;
@@ -37,6 +41,22 @@
     &:disabled {
       background-color: #d9d9d9;
       cursor: not-allowed;
+    }
+  }
+
+  &--error {
+    background-color: #e0542f;
+
+    &:hover {
+      background-color: color(#e0542f blackness(10%));
+
+      &:disabled {
+        background-color: color(#e0542f blackness(10%));
+      }
+    }
+
+    &:disabled {
+      background-color: #e0542f;
     }
   }
 
@@ -55,10 +75,6 @@
       left: 26px;
       background-size: contain;
     }
-  }
-
-  &:hover {
-    background-color: color(#fbcc21 blackness(10%));
   }
 
   &--add {
